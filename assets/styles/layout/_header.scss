@@ -1,0 +1,92 @@
+header {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  
+
+  @media screen and (max-width :550px) {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+
+  .header-container {
+    
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 250px;
+    align-items: center;
+    justify-content: center;
+    
+    img{ 
+      border-radius: 300px;
+      width: 100%;
+    }
+  }
+  .nav-container {
+    width: 100%;
+    position: fixed;
+    flex-wrap: wrap;
+    background: rgba(129, 197, 252, 0.342);
+    text-align: center;
+    
+    
+    @media screen and (max-width :550px){
+      display: none;
+    }
+
+    .list-nav {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     text-align: center;
+     width: 100%;
+     height: 100%;
+     margin: auto;
+     padding: 20px ;
+
+    
+      
+      li {
+        display: flex;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        font-size:0.8rem; 
+        font-weight: 500;
+        // align-items: center;
+        // text-align: center;
+        transition: 0.3s;
+      }
+        li:hover {
+          transform: scale(1.2);
+          font-weight: 900;
+          
+        }
+        
+
+        a {
+          text-align: center; 
+        }
+
+       
+      }
+    }
+  }
+
+  
+
+.mousemove {
+    width: 125px;
+    height: 90px;
+    background: url(./../images/photos/requin.png) center/cover;
+    position: absolute;
+    z-index: -10;
+    transition: 0.3s;
+    overflow: hidden;
+  }
