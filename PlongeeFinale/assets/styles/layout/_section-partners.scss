@@ -1,0 +1,30 @@
+.partner-container{
+    width: 70%;
+    margin: 0 auto;
+
+    .partner-img{
+        
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+            gap: 20px;
+                img{
+                    width: 90px;
+                    height: 55px;
+                }
+            @media screen and (max-width :1000px){
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+    }  
+            @media screen and (max-width :600px){
+            grid-template-columns: 1fr 1fr ;
+            gap: 5px;
+    } 
+        }
+        li{
+            transition: 0.4s;
+        }
+        li:hover{
+            transform: scale(1.1);
+        }
+    }
+}
